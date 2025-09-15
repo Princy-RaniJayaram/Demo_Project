@@ -1,0 +1,38 @@
+/* Hero Section */
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('./Asset/Sky.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.brand-name {
+    color: #00c9a7;
+    font-style: italic;
+}
+
+.search-bar input,
+.search-bar button {
+    width: 270px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 5px;
+}
