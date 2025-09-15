@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar styles */
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s;
+    text-align: center;
+    height: 50px;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: translateY(-5px);
+    color: #0ca289;
+}
+
+.navbar-nav .nav-link i {
+    transition: transform 0.3s;
+}
+
+.navbar-nav .nav-link:hover i {
+    transform: scale(1.2);
+}
+
+.discover-card img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.discover-card {
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.discover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    z-index: 1000;
+    height: 12vh;
+}
+
+
+/*Video*/
+
+.video-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: brightness(90%);
+}
+
+.video-overlay-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.video-overlay-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.video-overlay-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.carousel-item
+{
+    height: 850px !important;
+    
+}
